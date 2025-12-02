@@ -118,4 +118,17 @@ public class MenuController : MonoBehaviour
             comfirmationPrompt.SetActive(false);
         }
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void InvertYToggle(bool isOn)
+    {
+        if (isOn)
+            PlayerPrefs.SetInt("masterInvertY", 1);
+        else
+            PlayerPrefs.SetInt("masterInvertY", 0);
+    }
 }

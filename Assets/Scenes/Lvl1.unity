@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &370936824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370936825}
+  m_Layer: 0
+  m_Name: timeline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370936825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370936824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.24972, y: 1.28115, z: 3.68265}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370949770
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +350,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4004838544352553760, guid: 138cb975b35ec6640b0057a7436dd593, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.055733
+      value: 3.01
       objectReference: {fileID: 0}
     - target: {fileID: 4004838544352553760, guid: 138cb975b35ec6640b0057a7436dd593, type: 3}
       propertyPath: m_LocalPosition.y
@@ -327,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4004838544352553760, guid: 138cb975b35ec6640b0057a7436dd593, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.589935
+      value: 3.49
       objectReference: {fileID: 0}
     - target: {fileID: 4004838544352553760, guid: 138cb975b35ec6640b0057a7436dd593, type: 3}
       propertyPath: m_LocalRotation.w
@@ -802,8 +833,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00056458}
-  m_SizeDelta: {x: 800, y: 471.26}
+  m_AnchoredPosition: {x: 0, y: 0.000019073}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625702884
 MonoBehaviour:
@@ -1333,3 +1364,4 @@ SceneRoots:
   - {fileID: 1958719328}
   - {fileID: 748850693}
   - {fileID: 695403635}
+  - {fileID: 370936825}
