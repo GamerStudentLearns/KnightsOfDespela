@@ -68,6 +68,8 @@ public class MenuController : MonoBehaviour
     public void NewGameDialogYes()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(newGameLevel);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void ResetButton(string MenuType)
