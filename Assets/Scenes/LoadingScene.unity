@@ -971,7 +971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c8cf3f8efae15c43a2ffe51c15c62f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitcher
-  sceneToLoad: Lvl2
+  sceneToLoad: MainMenu
   UnlockCursorScene: MainMenu
   delayTime: 10
 --- !u!4 &1930853480
