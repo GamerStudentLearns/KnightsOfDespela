@@ -1989,6 +1989,11 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 1955575410149769653, guid: 6ed8b1421c582274aa83990c09369ea2, type: 3}
   m_PrefabInstance: {fileID: 1443217053}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1446521531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8940024296819629090, guid: 6ed8b1421c582274aa83990c09369ea2, type: 3}
+  m_PrefabInstance: {fileID: 1443217053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1527691951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,6 +2386,34 @@ PrefabInstance:
       propertyPath: newGameLevel
       value: Lvl1
       objectReference: {fileID: 0}
+    - target: {fileID: 971184913690997356, guid: c9c65f378ca95074fb42805541013dac, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 735625478}
+    - target: {fileID: 971184913690997356, guid: c9c65f378ca95074fb42805541013dac, type: 3}
+      propertyPath: defaultVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 971184913690997356, guid: c9c65f378ca95074fb42805541013dac, type: 3}
+      propertyPath: invertYToggle
+      value: 
+      objectReference: {fileID: 277151311}
+    - target: {fileID: 971184913690997356, guid: c9c65f378ca95074fb42805541013dac, type: 3}
+      propertyPath: volumeTextValue
+      value: 
+      objectReference: {fileID: 1715152027}
+    - target: {fileID: 971184913690997356, guid: c9c65f378ca95074fb42805541013dac, type: 3}
+      propertyPath: comfirmationPrompt
+      value: 
+      objectReference: {fileID: 1446521531}
+    - target: {fileID: 971184913690997356, guid: c9c65f378ca95074fb42805541013dac, type: 3}
+      propertyPath: KeyboardSensitivitySlider
+      value: 
+      objectReference: {fileID: 83720440}
+    - target: {fileID: 971184913690997356, guid: c9c65f378ca95074fb42805541013dac, type: 3}
+      propertyPath: KeyboardSensitivityTextValue
+      value: 
+      objectReference: {fileID: 1328515197}
     - target: {fileID: 4247877358527306114, guid: c9c65f378ca95074fb42805541013dac, type: 3}
       propertyPath: m_Name
       value: MenuController
