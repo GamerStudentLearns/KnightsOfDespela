@@ -822,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8c933862c8ef4459431ca00d4af22f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTriggerLoader
-  sceneToLoad: LoadingScene
+  sceneToLoad: Lvl2Load
 --- !u!1001 &71130198
 PrefabInstance:
   m_ObjectHideFlags: 0
