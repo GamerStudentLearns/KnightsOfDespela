@@ -746,7 +746,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66207159}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2691,7 +2691,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238506328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4050,11 +4050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fc6fd467da41454587450286e7b3f2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.655
+      value: 0.745
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fc6fd467da41454587450286e7b3f2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 168.573
+      value: 168.744
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9fc6fd467da41454587450286e7b3f2a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7377,7 +7377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &837773491
 Transform:
   m_ObjectHideFlags: 0

@@ -1,47 +1,77 @@
 ﻿using UnityEngine;
+
 public class TriggerSequence : MonoBehaviour
 {
     [Header("Number of triggers in puzzle")]
     public int totalTriggers;
-    [Header("Object to activate after all triggers")]
-    public GameObject objectToActivate;
+
+    [Header("Objects to activate after all triggers")]
+    public GameObject[] objectsToActivate;   // Array of objects
+
     [Header("Audio Source (attach to same object or prefab)")]
     public AudioSource audioSource;
+
     private bool[] steppedOn;
     private int steppedCount = 0;
+
     void Start()
     {
+        // Initialize steppedOn array
         steppedOn = new bool[totalTriggers];
-        if (objectToActivate != null)
-            objectToActivate.SetActive(false);
+
+        // Deactivate all objects at start
+        if (objectsToActivate != null)
+        {
+            foreach (GameObject obj in objectsToActivate)
+            {
+                if (obj != null)
+                    obj.SetActive(false);
+            }
+        }
+
+        // Hide audio source until puzzle solved
         if (audioSource != null)
-            audioSource.gameObject.SetActive(false); // hide audio source until object appears
+            audioSource.gameObject.SetActive(false);
     }
+
     public void TriggerStepped(int index)
     {
         if (!steppedOn[index])
         {
             steppedOn[index] = true;
             steppedCount++;
+
             // If all triggers have been stepped on
             if (steppedCount >= totalTriggers)
             {
-                if (objectToActivate != null)
-                    objectToActivate.SetActive(true);
+                // Activate all objects
+                if (objectsToActivate != null)
+                {
+                    foreach (GameObject obj in objectsToActivate)
+                    {
+                        if (obj != null)
+                            obj.SetActive(true);
+                    }
+                }
+
+                // Play audio
                 if (audioSource != null)
                 {
-                    audioSource.gameObject.SetActive(true); // show audio source only now
+                    audioSource.gameObject.SetActive(true);
                     audioSource.Play();
                 }
-                // Reset if you want to reuse
+
+                // Reset if you want to reuse puzzle
                 ResetTriggers();
             }
         }
     }
+
     private void ResetTriggers()
     {
         for (int i = 0; i < steppedOn.Length; i++)
             steppedOn[i] = false;
+
         steppedCount = 0;
     }
 }
