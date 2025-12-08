@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerSequence : MonoBehaviour
 {
@@ -30,6 +31,35 @@ public class TriggerSequence : MonoBehaviour
         }
 
         // Hide audio source until puzzle solved
+        if (audioSource != null)
+            audioSource.gameObject.SetActive(false);
+
+        // Subscribe to sceneLoaded event
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe to avoid memory leaks
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Reset puzzle state when scene changes
+        ResetTriggers();
+
+        // Deactivate objects again
+        if (objectsToActivate != null)
+        {
+            foreach (GameObject obj in objectsToActivate)
+            {
+                if (obj != null)
+                    obj.SetActive(false);
+            }
+        }
+
+        // Hide audio source again
         if (audioSource != null)
             audioSource.gameObject.SetActive(false);
     }
