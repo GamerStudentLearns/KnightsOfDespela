@@ -12,11 +12,41 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 23b7e4d3f47271a45b8d86f2f2ca3c8b
   - enabled: 1
+    path: Assets/Scenes/LoreDump.unity
+    guid: a6766aaf8c8ad3344ab12a20d0739b2d
+  - enabled: 1
     path: Assets/Scenes/Lvl1.unity
     guid: 9aa5c0584a1c0214c95552738f38b9f2
   - enabled: 1
-    path: Assets/Scenes/LoadingScene.unity
+    path: Assets/Scenes/Lvl2Load.unity
     guid: 9abd271b6571b9a4b8ac573fa342b6ab
+  - enabled: 1
+    path: Assets/Scenes/Lvl2.unity
+    guid: 0f58eda9664d4eb45a3d6d0fa81e3697
+  - enabled: 1
+    path: Assets/Scenes/Lvl3Load.unity
+    guid: 791a01d1b570eea4ca582c14bb5dc2f5
+  - enabled: 1
+    path: Assets/Scenes/Lvl3.unity
+    guid: a15bf68d00b9d2648a5e35970500ed8d
+  - enabled: 1
+    path: Assets/Scenes/Lvl4Load.unity
+    guid: 9648e0e8516c5d5419d3ccaddfdd839c
+  - enabled: 1
+    path: Assets/Scenes/Lvl4.unity
+    guid: 0c7bae3d029dd5d419781e5749593ff9
+  - enabled: 1
+    path: Assets/Scenes/Lvl5Load.unity
+    guid: 9712d64bf243da44b9581ed223516f80
+  - enabled: 1
+    path: Assets/Scenes/Lvl5.unity
+    guid: cbe206dcf5132264f969510600a3eddf
+  - enabled: 1
+    path: Assets/Scenes/FinalLevel.unity
+    guid: 3b91845f3d2e9cb449b1453e81357672
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: a3c20007990deee4385883f987dc3c73
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
