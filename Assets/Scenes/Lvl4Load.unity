@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1316992042302219500, guid: 6003e5e2a7f00d44f9026ec7bcc0e640, type: 3}
       propertyPath: sceneToLoad
-      value: MainMenu
+      value: Lvl4
       objectReference: {fileID: 0}
     - target: {fileID: 3690846458682346067, guid: 6003e5e2a7f00d44f9026ec7bcc0e640, type: 3}
       propertyPath: m_LocalPosition.x
