@@ -5288,6 +5288,7 @@ GameObject:
   - component: {fileID: 1493143509}
   - component: {fileID: 1493143508}
   - component: {fileID: 1493143507}
+  - component: {fileID: 1493143512}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -5307,8 +5308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2a29a56d94bd242850e1724b165749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
-  objectsToActivate:
-  - {fileID: 1734474816}
+  objectsToActivate: []
   objectsToDeactivate:
   - {fileID: 1493143506}
   playerTag: Player
@@ -5406,6 +5406,19 @@ Transform:
   - {fileID: 1402687640}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1493143512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493143506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5223245fa2341e240938794fe5958442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerUnlock
+  objectToUnlock: {fileID: 1734474816}
 --- !u!1 &1528595431
 GameObject:
   m_ObjectHideFlags: 0
