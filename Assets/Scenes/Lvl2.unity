@@ -205,14 +205,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 61549530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91db017fdad4c346aeabbdb5950d5b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c2a29a56d94bd242850e1724b165749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
   objectsToActivate:
   - {fileID: 1830464983}
   objectsToDeactivate:
-  - {fileID: 1552203036}
-  - {fileID: 1392297557}
+  - {fileID: 61549530}
   playerTag: Player
 --- !u!65 &61549532
 BoxCollider:
@@ -749,14 +748,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 254674110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91db017fdad4c346aeabbdb5950d5b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c2a29a56d94bd242850e1724b165749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
   objectsToActivate:
-  - {fileID: 992402680}
+  - {fileID: 0}
   objectsToDeactivate:
-  - {fileID: 601844997}
-  - {fileID: 1157910710}
+  - {fileID: 254674110}
   playerTag: Player
 --- !u!65 &254674112
 BoxCollider:
@@ -1847,11 +1845,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}
   m_PrefabInstance: {fileID: 601844995}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &601844997 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}
-  m_PrefabInstance: {fileID: 601844995}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &654562425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1989,11 +1982,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}
---- !u!1 &654647148 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}
-  m_PrefabInstance: {fileID: 654647147}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &654647149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}
@@ -5316,14 +5304,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1493143506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91db017fdad4c346aeabbdb5950d5b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c2a29a56d94bd242850e1724b165749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
   objectsToActivate:
   - {fileID: 1734474816}
   objectsToDeactivate:
-  - {fileID: 654647148}
-  - {fileID: 1402687639}
+  - {fileID: 1493143506}
   playerTag: Player
 --- !u!65 &1493143508
 BoxCollider:
@@ -5785,11 +5772,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}
---- !u!1 &1552203036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}
-  m_PrefabInstance: {fileID: 1552203035}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1552203037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17fdb8d334a85054f8aa8a1b56feada8, type: 3}

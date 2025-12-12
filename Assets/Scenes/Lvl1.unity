@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 238506328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91db017fdad4c346aeabbdb5950d5b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c2a29a56d94bd242850e1724b165749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
   objectsToActivate:
@@ -13633,7 +13633,7 @@ GameObject:
   - component: {fileID: 1773417228}
   - component: {fileID: 1773417227}
   - component: {fileID: 1773417226}
-  - component: {fileID: 1773417225}
+  - component: {fileID: 1773417230}
   m_Layer: 0
   m_Name: keytrigger
   m_TagString: Untagged
@@ -13641,24 +13641,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1773417225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773417224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91db017fdad4c346aeabbdb5950d5b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
-  objectsToActivate:
-  - {fileID: 1749279987}
-  - {fileID: 66207159}
-  objectsToDeactivate:
-  - {fileID: 2142731003}
-  playerTag: Player
 --- !u!65 &1773417226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13751,6 +13733,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -27.507, z: 0}
+--- !u!114 &1773417230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773417224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2a29a56d94bd242850e1724b165749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerObjectToggle
+  objectsToActivate:
+  - {fileID: 1749279987}
+  objectsToDeactivate:
+  - {fileID: 2142731003}
+  playerTag: Player
 --- !u!1001 &1781133734
 PrefabInstance:
   m_ObjectHideFlags: 0
