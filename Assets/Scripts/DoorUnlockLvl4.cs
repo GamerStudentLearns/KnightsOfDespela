@@ -5,16 +5,19 @@ public class DoorUnlockLvl4 : MonoBehaviour
     public LeverSwitch Lever;
     public LeverSwitch Lever_1;
     public LeverSwitch Lever_2;
-    bool DoorOpen = false;
-    private void OnTriggerEnter(Collider other)
+    public GameObject Exit;
+
+    private bool Unlocked = false;
+    
+    private void Update()
     {
-        if (Lever && !Lever_1 && Lever_2)
+        if (Unlocked) return;
+
+        if (Lever.isOn && !Lever_1.isOn && Lever_2.isOn)
         {
-            DoorOpen = true;
-            Debug.Log("Door Unlocked")
+            Unlocked = true;
+            Exit.SetActive(true);
+            Debug.Log("Door Unlocked");
         }
     }
-    
-        
-    
 }

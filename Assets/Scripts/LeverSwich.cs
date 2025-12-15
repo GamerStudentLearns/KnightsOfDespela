@@ -2,19 +2,31 @@ using UnityEngine;
 
 public class LeverSwitch : MonoBehaviour
 {
-    bool LeverOn = false;
+    public bool isOn;
+    public Transform leverHandle;
+    public float onAngle = -45f;
+    public float offAngle = 0f;
+    
     private void OnTriggerStay(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (LeverOn == true)
+            if (isOn == true)
             {
-                LeverOn = false;
+                isOn = false;
             }
             else
             {
-                LeverOn = true;
+                isOn = true;
             }
+            UpdateLeverVisual();
+            Debug.Log("lever switched");
         }
+    }
+
+    void UpdateLeverVisual()
+    {
+        float angle = isOn ? onAngle : offAngle;
+        leverHandle.localRotation = Quaternion.Euler(angle, 0f, 0f);
     }
 }
