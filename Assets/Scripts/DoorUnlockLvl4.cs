@@ -11,7 +11,7 @@ public class DoorUnlockLvl4 : MonoBehaviour
         if (Lever && !Lever_1 && Lever_2)
         {
             DoorOpen = true;
-            Debug.Log("Door Unlocked")
+            Debug.Log("Door Unlocked");
         }
     }
     
