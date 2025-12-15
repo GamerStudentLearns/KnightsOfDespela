@@ -2303,7 +2303,7 @@ GameObject:
   - component: {fileID: 238506332}
   - component: {fileID: 238506331}
   - component: {fileID: 238506330}
-  - component: {fileID: 238506329}
+  - component: {fileID: 238506334}
   m_Layer: 0
   m_Name: KeyNeeded
   m_TagString: Untagged
@@ -2311,22 +2311,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &238506329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238506328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91db017fdad4c346aeabbdb5950d5b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
-  objectsToActivate:
-  - {fileID: 615446128}
-  objectsToDeactivate: []
-  playerTag: Player
 --- !u!65 &238506330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2419,6 +2403,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238506334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238506328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5223245fa2341e240938794fe5958442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerUnlock
+  objectToUnlock: {fileID: 615446128}
 --- !u!4 &239199069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8710339842810834310, guid: 498eca1c3e0bf4d4dbc4a7b570b12557, type: 3}
@@ -8216,9 +8213,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 5b1d404461f73db40a0d7e11d76893e2, type: 3}
+  m_Resource: {fileID: 8300000, guid: 97248c5efaa2c4e4f91fa9af90077da0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.58
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -13633,7 +13630,8 @@ GameObject:
   - component: {fileID: 1773417228}
   - component: {fileID: 1773417227}
   - component: {fileID: 1773417226}
-  - component: {fileID: 1773417225}
+  - component: {fileID: 1773417230}
+  - component: {fileID: 1773417231}
   m_Layer: 0
   m_Name: keytrigger
   m_TagString: Untagged
@@ -13641,24 +13639,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1773417225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773417224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91db017fdad4c346aeabbdb5950d5b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleObjectsOnTrigger
-  objectsToActivate:
-  - {fileID: 1749279987}
-  - {fileID: 66207159}
-  objectsToDeactivate:
-  - {fileID: 2142731003}
-  playerTag: Player
 --- !u!65 &1773417226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13751,6 +13731,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -27.507, z: 0}
+--- !u!114 &1773417230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773417224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2a29a56d94bd242850e1724b165749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerObjectToggle
+  objectsToActivate:
+  - {fileID: 66207159}
+  objectsToDeactivate:
+  - {fileID: 2142731003}
+  playerTag: Player
+--- !u!114 &1773417231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773417224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5223245fa2341e240938794fe5958442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerUnlock
+  objectToUnlock: {fileID: 1749279987}
 --- !u!1001 &1781133734
 PrefabInstance:
   m_ObjectHideFlags: 0
