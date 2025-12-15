@@ -417,7 +417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44, y: -905}
+  m_AnchoredPosition: {x: -116, y: -905}
   m_SizeDelta: {x: 1238.6, y: 515.105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1440742387
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Centuries ago, the race of swans and the race of geese were at war.\n
+  m_text: "Centuries ago, the race of swans and the race of geese were at war.\n\n
     It was a long, hard and treacherous war. \nYet in the end, the swans emerged
     victorious. They took the castle of anglebert and ruled with an iron wing. Their
     strength unmatched by any who dared oppose them. They finally had what they wanted,
@@ -533,7 +533,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -2.8780823, w: 0}
+  m_margin: {x: 0, y: 0, z: -250.88309, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -575,7 +575,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: beeeef4f50cc9354e9627172aea3248f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 452306c348031914793e0f39553da006, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.42
   m_Pitch: 1
