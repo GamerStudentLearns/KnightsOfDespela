@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitcher
   sceneToLoad: Credits
   UnlockCursorScene: MainMenu
-  delayTime: 40
+  delayTime: 45
 --- !u!4 &55408976
 Transform:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1c1adb0c5225580409875c66d0f1c01c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.118
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2008,7 +2008,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5146290645194217601, guid: 53249edd60fb1ee419be784c6bb4a81a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6900024
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 5146290645194217601, guid: 53249edd60fb1ee419be784c6bb4a81a, type: 3}
       propertyPath: m_LocalPosition.y

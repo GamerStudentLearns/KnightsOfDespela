@@ -2,23 +2,7 @@ using UnityEngine;
 
 public class LeverSwitch : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    bool LeverOn = false;
-    private void OnTriggerStay(Collider other)
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (LeverOn == true)
-            {
-                LeverOn = false;
-            }
-            else
-            {
-                LeverOn = true;
-            }
-        }
-    }
-=======
+
     public bool isOn;
     public Transform leverHandle;
     public float onAngle = -45f;
@@ -55,5 +39,5 @@ public class LeverSwitch : MonoBehaviour
             Time.deltaTime * rotateSpeed
         );
     }
->>>>>>> Stashed changes
+
 }
